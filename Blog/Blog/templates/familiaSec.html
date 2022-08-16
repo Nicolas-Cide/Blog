@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+
+{% block title %} Familia Secundaria {% endblock %}
+
+
+{% block content %}
+<ul>
+    {% for i in familiaSec %}
+
+    <li>Familia secundaria: {{i}}</li>
+
+    {% endfor %}
+</ul>
+
+{% endblock %}

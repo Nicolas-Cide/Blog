@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<style>
+        #navBar{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-transform: uppercase;
+        }
+
+        #navBar li{
+            display: inline;
+            margin: 0 24px;
+        }
+</style>
+
+<body>
+
+    {% include "superior/navBar.html" %} 
+
+    <h1>Bienvenidos a la página principal</h1>
+    <br>
+    <h2>En esta página se verán las distintas ramas de mi familia</h2>
+    <br>
+    {% for i in info %}
+
+       <p>{{i}}</p>
+    
+    {% endfor %}
+</body>
+</html>

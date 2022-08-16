@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>
+        {% block title %} {% endblock %}
+    </title>
+</head>
+<body>
+
+    <h1 style="background-color: brown; color:aliceblue; text-align: center;">Mi Familia</h1>
+
+    {% include "superior/navBar.html" %}
+
+    <h3>Ramas de mi familia</h3>
+
+    {% block content %}
+
+    {% endblock %}
+
+
+    <p style="background-color: brown; color:aliceblue; text-align: center;">Gracias por su visita</p>
+    
+</body>
+</html>
