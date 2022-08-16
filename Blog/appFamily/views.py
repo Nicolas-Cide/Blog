@@ -3,7 +3,7 @@ from appFamily.models import familiaPrinc
 
 # Create your views here.
 
-def index(request):
+def home(request):
 
     info = familiaPrinc.objects.all()
     return render(request,'home.html',{'info':info})
