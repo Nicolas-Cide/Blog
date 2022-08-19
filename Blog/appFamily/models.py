@@ -6,7 +6,7 @@ class Clientes(models.Model):
     name = models.CharField(max_length=30)
     adress = models.CharField(max_length=30)
     email = models.EmailField()
-    phone = models.IntegerField(max_length=7)
+    phone = models.IntegerField()
 
 
 class Productos(models.Model):
