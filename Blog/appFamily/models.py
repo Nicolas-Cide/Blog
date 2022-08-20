@@ -8,6 +8,9 @@ class Clientes(models.Model):
     email = models.EmailField()
     phone = models.IntegerField()
 
+    def __str__(self):
+        return f'Cliente: {self.name}, Direc: {self.adress}, email: {self.email}, phone: {self.phone}'
+
 
 class Productos(models.Model):
     name = models.CharField(max_length=30)
