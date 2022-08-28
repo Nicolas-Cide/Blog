@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>La busqueda que haz realizado es: <b>{{query}}</b></p>
+
+    {% if productos %}
+
+        <p>Busqueda exitosa. Productos encontrados: {{productos|length}} productos</p>
+
+        <ul>
+            {% for i in productos %}
+                <li>
+                    {{i.name}} &nbsp; {{i.section}} &nbsp; {{i.price}}
+                </li>
+            {% endfor %}
+        </ul>
+    
+    {% else %}
+        <p>Busqueda con error. No se encuentra el producto buscado</p>
+        
+    {% endif %}
+
+</body>
+</html>
